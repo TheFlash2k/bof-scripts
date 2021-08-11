@@ -40,6 +40,12 @@ b"\xe6\xe7\xe8\xe9\xea\xeb\xec\xed\xee\xef\xf0\xf1\xf2\xf3\xf4\xf5\xf6\xf7\xf8\x
 
 ## identify_bad_char.py:
 This script is the most useful amongst all of the above as most people (including me) tend to miss out atleast a single bad character and then generate a shell code that would cause problems later on. So, what I simply did is made everything a little bit more easier.
+
+Usage:
+```bash
+python3 identify_bad_char.py dump.hex
+```
+The `dump.hex` file refers to the dump from immunity debuffer.
 You need to store the data dump from immunity debugger into a file, and just pass that specific file as an argument when calling this. Check the following screenshots for a better clarification as to how to use this script.
 
 Step 1:

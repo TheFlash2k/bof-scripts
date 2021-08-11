@@ -63,3 +63,6 @@ Step 3:
 Step 4:
 - Just run the script now and pass the file as an argument and we will have the script tell us about the badchars.
 ![img_4](imgs/4.png)
+
+
+Note: All the badchars (if more than one) will be printed as a list (comma seperated) so that it can directly be copy pasted into the msfvenom command for shell-code generation.

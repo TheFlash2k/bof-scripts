@@ -20,7 +20,7 @@ init = False
 print("badchars = (")
 for char in badchars.split('\\'):
 	if i == 1:
-		print('"', end = '')
+		print('b"', end = '')
 	if i == 1 and not init:
 		print(char, end ='')
 		init = True

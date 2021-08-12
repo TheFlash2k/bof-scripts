@@ -3,6 +3,33 @@ A combination of some scripts that may assist during OSCP Buffer Overflow.
 
 ## exploiter.py
 [Update Aug 12, 2021]: Just added this in to the repository.
+This script takes a lot of arguments that will you will gather while just messing around with the binary. But once you have everything you want, you can use this script to generate another script that will contain everything including the shell code pre-setup and that will save time and you can pwn more stuff. idk ;---;.
+
+```bash
+Usage: exploiter.py [-h] -v VICTIM -lhost LHOST -lport LPORT -b BAD_CHARS -eip EIP_ADDRESS -o OFFSET [-O OUT_FILE] -p {nc_shell,meterpreter}
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v VICTIM, --victim VICTIM
+                        A colon seperated (ip:port) information of the victim
+  -lhost LHOST, --listening-host LHOST
+                        The IP Address of the host that will be initiating the attack
+  -lport LPORT, --listening-port LPORT
+                        The Port on which the attacker will be listening for reverse shells
+  -b BAD_CHARS, --bad-chars BAD_CHARS
+                        The bad characters that will be excluded from the shell code.
+                        Note: Pass the badchars as a string literal: '\x00\x0A'
+  -eip EIP_ADDRESS, --eip-address EIP_ADDRESS
+                        The hexadecimal address of the Instruction Pointer
+  -o OFFSET, --offset OFFSET
+                        The offset at which the EIP is overwritten
+  -O OUT_FILE, --out-file OUT_FILE
+                        The name of the output file that will contain the exploit
+  -p {nc_shell,meterpreter}, --payload {nc_shell,meterpreter}
+                        The payload for which the shell code will be generated.
+```
+
+This is pretty self-explanatory. But if you face any problems, feel free to dm me on discord: TheFlash2k#0407
 
 ## address_to_hex.py
 To use this script is pretty simple, all we need is just to copy the address and then pass that address an argument. Basic usage:

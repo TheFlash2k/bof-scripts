@@ -1,6 +1,9 @@
 # Some random bof scripts for ease
 A combination of some scripts that may assist during OSCP Buffer Overflow.
 
+## exploiter.py
+[Update Aug 12, 2021]: Just added this in to the repository.
+
 ## address_to_hex.py
 To use this script is pretty simple, all we need is just to copy the address and then pass that address an argument. Basic usage:
 ```bash

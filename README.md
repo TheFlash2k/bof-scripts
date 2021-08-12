@@ -31,6 +31,15 @@ optional arguments:
 
 This is pretty self-explanatory. But if you face any problems, feel free to dm me on discord: TheFlash2k#0407
 
+A basic usage and output is as follows:
+
+- Generating the exploit:
+![img_5](imgs/5.png)
+
+- Output:
+![img_6](imgs/6.png)
+
+
 ## address_to_hex.py
 To use this script is pretty simple, all we need is just to copy the address and then pass that address an argument. Basic usage:
 ```bash

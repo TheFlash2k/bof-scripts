@@ -57,4 +57,5 @@ if not err:
 else:
 	for i in range(len(bad_chars)):
 		bad_chars[i] = r'\x' + bad_chars[i]
-	print(f"Following badchars were found: {','.join(bad_chars)}")
+	print(f"Following badchars were found: \\x00,{','.join(bad_chars)}")
+	print("[*] NOTE: If you see an incremented badchar (\\x07,\\x08), that would most probably mean that the first one is the badchar and the second one is affected by it somehow.")

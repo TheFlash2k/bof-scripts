@@ -105,3 +105,8 @@ Step 4:
 
 
 Note: All the badchars (if more than one) will be printed as a list (comma seperated) so that it can directly be copy pasted into the msfvenom command for shell-code generation.
+
+## identify_missing_chars.py:
+This script can be really helpful too (Helped in VulnHub's `School` box. As we had to keep a note of what characters we were removing after each iteration to identify all the possible bad characters. So, if we somehow forgot to take note of 1, that would cause error in the shell code. So, I just simply wrote a script. Same as bad_chars, you need to copy the hex dump and paste it in a file and just pass the file name as arugment.
+
+----

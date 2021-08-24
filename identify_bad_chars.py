@@ -40,7 +40,7 @@ def get_args():
 		pass
 
 	if check:
-		if check.lower() != '-v' or check.lower() != '--verbose':
+		if check.lower() != '-v' and check.lower() != '--verbose':
 			print(f"[-] Invalid argument {check} provided!")
 			exit(1)
 		else:
